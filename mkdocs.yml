@@ -1,0 +1,163 @@
+site_name: MITF Voucher Provider Documentation
+site_description: Technical documentation for the MITF Voucher Provider workspace
+site_url: https://safoosafa.github.io/VoucherManagement-docs/
+repo_url: https://github.com/SafOosafa/VoucherManagement-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SafOosafa/VoucherManagement-docs
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/anstwechy
+  consent:
+    title: Cookie consent
+    description: This site uses cookies from Google Analytics for usage tracking.
+
+copyright: Copyright &copy; 2026 Masarat
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: README.md
+  - For management:
+      - Platform at a glance: stakeholders/
+      - Executive & business overview: stakeholders/executive-overview.md
+      - Risk, compliance & finance: stakeholders/risk-compliance-and-finance.md
+      - Operations & technology: stakeholders/operations-and-technology.md
+  - Getting started:
+      - Getting started index: getting-started/
+      - 5-minute quickstart: getting-started/quickstart.md
+      - Masarat segments: getting-started/masarat-customer-segments.md
+      - Welcome & guided tours: getting-started/welcome.md
+      - Full A–Z index: getting-started/all-pages.md
+  - Changelog & releases: changelog/
+  - Architecture:
+      - Platform capabilities: architecture/
+      - Workspace overview: architecture/workspace-overview.md
+      - System specifications: architecture/system-specs.md
+      - Flow diagrams: architecture/flow-diagrams.md
+      - Resident & foreign gateway personas: architecture/resident-and-foreign-gateway-personas.md
+      - Domain events: architecture/events.md
+      - Money movement (sequence diagrams): architecture/money-movement-sequence-diagrams.md
+      - Transaction flows & ledger examples: architecture/transaction-flows-and-ledger-examples.md
+      - Transfer backpressure (client contract): architecture/transfer-backpressure-client-contract.md
+      - Outbox & ledger consistency: architecture/outbox-and-ledger-consistency.md
+      - KYC flow, validation & portal approval: architecture/kyc-flow-validation-and-portal-approval.md
+  - Security:
+      - System hardening: security/
+      - Onboarding channel hardening: security/onboarding-channel-hardening.md
+      - Staff credential lifecycle: security/staff-credential-lifecycle.md
+  - Compliance & offline:
+      - Offline packs (print / PDF): compliance/offline-packs.md
+  - Accessibility: accessibility/
+  - Operations:
+      - Operations index: operations/
+      - Production deployment: operations/production-deployment.md
+      - Logging & observability: operations/logging.md
+      - Local compose and QA: operations/local-compose-and-qa.md
+      - Load testing operations: operations/load-testing-operations.md
+      - Reconciliation & consistency runbook: operations/reconciliation-and-consistency-runbook.md
+  - Reconciliation:
+      - Financial operations & reconciliation: reconciliation/
+      - Reconciliation job: reconciliation/reconciliation.md
+  - Integrations:
+      - Integrations index: integrations/
+      - Primo Wallet integration: integrations/primo-wallet-integration.md
+      - Third-party provider config: integrations/third-party-provider-config.md
+      - gRPC remote stock bridge: integrations/grpc-remote-stock-bridge.md
+  - Load testing:
+      - Stakeholder summary: load-testing/
+      - Reference runs: load-testing/load-test-reference-runs.md
+  - Flows:
+      - UI testing overview: flows/
+      - Playwright UI testing: flows/playwright-ui-testing.md
+      - Maestro UI testing: flows/maestro-ui-testing.md
+      - UAT checklist: flows/uat-checklist-voucher-stock.md
+  - Reference:
+      - Service reference index: reference/
+      - API reference: reference/api.md
+      - gRPC services: reference/grpc-services.md
+      - Configuration reference: reference/configuration-reference.md
+      - API conventions: reference/api-conventions.md
+      - Management API: reference/management-api.md
+      - External API: reference/external-api.md
+      - Internal API: reference/internal-api.md
+      - Gateway: reference/gateway.md
+      - Purchase orchestrator: reference/purchase-orchestrator.md
+      - Reports API guide: reference/reports-api-guide.md
+      - vouchers-stock SPA: reference/vouchers-stock-spa.md
+      - Primo Wallet timestamps: reference/primo-wallet-timestamps.md
+      - Database schemas:
+          - Management DB schema: reference/schema/management-db-schema.md
+          - External DB schema: reference/schema/external-db-schema.md
+          - Internal DB schema: reference/schema/internal-db-schema.md
+          - Gateway DB schema: reference/schema/gateway-db-schema.md
+          - Purchase orchestrator DB schema: reference/schema/purchase-orchestrator-db-schema.md
