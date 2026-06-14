@@ -33,6 +33,7 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.sticky
     - search.highlight
     - search.share
     - content.code.copy
