@@ -38,6 +38,7 @@ Per-service column definitions extracted from `PostgresInitial` migrations (June
 | `CustomResult` JSON shape, `providerId`, error codes | [api-conventions.md](api-conventions.md) |
 | SPA routes → Management API report paths | [reports-api-guide.md](reports-api-guide.md) |
 | Primo Wallet timestamp conventions | [primo-wallet-timestamps.md](primo-wallet-timestamps.md) |
+| MobileChannel provider display config | [provider-type-options-config.md](provider-type-options-config.md) |
 | gRPC remote stock contract | `grpc/stock_remote_v1.proto` (repo root) |
 
 ---

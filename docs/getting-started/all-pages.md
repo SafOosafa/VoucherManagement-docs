@@ -81,6 +81,7 @@
 - [gRPC services](../reference/grpc-services.md)
 - [Configuration reference](../reference/configuration-reference.md)
 - [API conventions](../reference/api-conventions.md)
+- [Provider type options config](../reference/provider-type-options-config.md)
 - [Management API](../reference/management-api.md)
 - [External API](../reference/external-api.md)
 - [Internal API](../reference/internal-api.md)
