@@ -30,7 +30,7 @@
 | Purchase orchestrator | http://localhost:5260/swagger | 5260 |
 | Stock SPA | http://localhost:4200 | 4200 |
 
-Dev login (when seed enabled): `admin` / `DevPass123!`
+Dev login (when seed enabled): `admin` / `admin`
 
 ---
 
