@@ -34,7 +34,7 @@ pwsh ./scripts/run-ui-tests.ps1 -SkipDockerStart -RunFeatureFlows
 pwsh ./scripts/run-ui-tests.ps1 -SkipDockerStart -RunAllFlows
 ```
 
-Credentials (Development EasyPass): `admin` / `DevPass123!`
+Credentials (Development EasyPass): `admin` / `admin`
 
 Login subflow forces English via `localStorage.setItem('vouchers-stock.locale', 'en')`.
 

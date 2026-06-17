@@ -43,7 +43,7 @@ $env:E2E_API_BASE_URL = "http://localhost:5189"
 npm run e2e
 ```
 
-Credentials (Development EasyPass): `admin` / `DevPass123!`
+Credentials (Development EasyPass): `admin` / `admin`
 
 ## Watch tests in a visible browser
 

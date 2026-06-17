@@ -62,7 +62,7 @@ UAT checklist: [../flows/uat-checklist-voucher-stock.md](../flows/uat-checklist-
 | Gateway | JWT Bearer | `Authorization: Bearer <token>` |
 | Purchase orchestrator | API key | `X-Api-Key` |
 
-**Dev login** (Management, when seed enabled): `admin` / `DevPass123!`
+**Dev login** (Management, when seed enabled): `admin` / `admin`
 
 ---
 

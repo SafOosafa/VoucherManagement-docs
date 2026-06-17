@@ -31,7 +31,7 @@ curl -sS http://localhost:5189/health
 Obtain a JWT token (when seed is enabled with dev login):
 
 ```powershell
-$body = @{ username = "admin"; password = "DevPass123!" } | ConvertTo-Json
+$body = @{ username = "admin"; password = "admin" } | ConvertTo-Json
 $token = curl -sS -X POST http://localhost:5189/api/authentication/authenticate `
   -H "Content-Type: application/json" -d $body | ConvertFrom-Json | Select -ExpandProperty token
 ```

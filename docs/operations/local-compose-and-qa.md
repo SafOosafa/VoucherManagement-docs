@@ -65,7 +65,7 @@ For local Angular dev with hot reload:
 
 | Variable | Effect |
 |----------|--------|
-| `ManagementDataSeed__Enabled=true` | Dev login `admin` / `DevPass123!` |
+| `ManagementDataSeed__Enabled=true` | Dev login `admin` / `admin` |
 | `ManagementDataSeed__IncludeThirdPartyProviders` | Primo Wallet config |
 | `ManagementDataSeed__IncludeDockerBankForeignStocks` | Wire six banks + gRPC |
 | `ManagementDataSeed__IncludeDockerDemoExportsToInternalBanks` | Demo exports (off in CI) |
